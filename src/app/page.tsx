@@ -16,7 +16,7 @@ export default async function Home() {
       <Link className="border border-slate-300 text-slate-300 px-2 py-1 rounded hover:bg-slate-700 focus-within:bg-slate-700 outline-none" href='/new'>New</Link>
     </header>
     <ul className="pl-4">{todos.map(todo => (
-      <TodoItem key={todo.id} {...todo}/>
+      <TodoItem key={todo.id} {...todo} toggleTodo={toggleTodo}/>
     ))}</ul>
     </>
   )
